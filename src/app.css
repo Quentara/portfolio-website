@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.6rem;
+  color: #222; }
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  background-color: #1f3c4d;
+  justify-content: space-between;
+  padding: 0 1rem;
+  color: #f2f2f2;
+  font-weight: 700;
+  font-size: .9rem; }
+  #navbar span {
+    margin: 1rem 0; }
+  #navbar a {
+    text-decoration: none;
+    color: #f2f2f2; }
+    #navbar a:hover {
+      color: #FC5185; }
+  #navbar li {
+    display: inline;
+    list-style-type: none;
+    margin: 0 .5rem; }
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, rgba(31, 60, 77, 0.9), rgba(252, 81, 133, 0.9)), url("/src/img/hero-background.jpg");
+  background-size: cover;
+  text-align: center;
+  color: #f2f2f2; }
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase; }
+
+.avatar {
+  border-radius: 100%;
+  margin: 2rem; }
+
+@media (max-width: 380px) {
+  #navbar span {
+    display: none; } }
