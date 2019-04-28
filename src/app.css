@@ -9,6 +9,9 @@ body {
   line-height: 1.6rem;
   color: #222; }
 
+a {
+  text-decoration: none; }
+
 #navbar {
   position: fixed;
   width: 100%;
@@ -18,7 +21,8 @@ body {
   padding: 0 1rem;
   color: #f2f2f2;
   font-weight: 700;
-  font-size: .9rem; }
+  font-size: .9rem;
+  z-index: 2; }
   #navbar span {
     margin: 1rem 0; }
   #navbar a {
@@ -51,6 +55,110 @@ h1 {
   border-radius: 100%;
   margin: 2rem; }
 
+/*
+  SECTION STYLES
+*/
+.section {
+  padding: 3rem; }
+
+.section-header {
+  text-align: center;
+  padding: 2rem; }
+  .section-header h2 {
+    display: inline-block;
+    font-size: 3rem;
+    background: #FC5185;
+    color: #f2f2f2;
+    transform: rotate(-2deg);
+    text-transform: uppercase;
+    padding: 2rem;
+    line-height: 3rem; }
+
+.seperator {
+  overflow: hidden;
+  position: relative;
+  transform: skewY(-2deg);
+  height: 20rem;
+  margin-top: 5rem; }
+  .seperator img {
+    width: 100%;
+    transform: translateY(-10rem); }
+
+.card-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.card {
+  display: flex;
+  width: 24rem;
+  margin: 2rem 0;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem; }
+  .card h3 {
+    color: #1f3c4d; }
+
+.icon {
+  width: 8rem;
+  display: block;
+  margin: 1rem auto; }
+
+.responsive {
+  width: 100%;
+  height: auto; }
+
+.btn {
+  background-color: #1f3c4d;
+  color: #f2f2f2;
+  transition: all .5s;
+  padding: .5rem 2rem;
+  border-radius: 1rem;
+  margin: 1rem; }
+  .btn:hover {
+    background-color: #FC5185; }
+
+/* 
+  FOOTER
+*/
+.footer {
+  padding: 25px;
+  text-align: center;
+  font-size: .75em;
+  color: #f2f2f2;
+  background: #1f3c4d; }
+
+.social-icons {
+  display: flex;
+  justify-content: center; }
+
+.social {
+  margin: 0 25px;
+  font-size: 2.5em;
+  transition: color 1s;
+  text-decoration: none; }
+  .social:hover {
+    color: #FC5185; }
+
+.linkedin {
+  color: #0077b5; }
+
+.facebook {
+  color: #3b5998; }
+
+.twitter {
+  color: #00aced; }
+
+.github {
+  color: #43DDE6; }
+
+/*
+  MEDIA QUERYS
+*/
 @media (max-width: 380px) {
   #navbar span {
     display: none; } }
