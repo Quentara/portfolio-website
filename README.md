@@ -1,5 +1,7 @@
 # Personal Portfolio | Daniel Flege
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/aa21969b-7487-4544-8fda-35ed202ca737/deploy-status)](https://app.netlify.com/sites/daniel-flege/deploys)
+
 Thanks for checking out my **personal portfolio**. Here you can find out some personal information about myself and about the stuff I'm creating with 
 
 - HTML & CSS
