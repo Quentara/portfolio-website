@@ -1,7 +1,7 @@
 $brand-blue: #43DDE6;
 $brand-magenta: #FC5185;
 $dark-blue: #1f3c4d;
-$color-grey: #222;
+$color-grey: #444;
 $color-white: #f2f2f2;
 $padding: 2rem;
 $margin: 2rem;
@@ -15,6 +15,8 @@ $margin: 2rem;
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   margin: 0;
   line-height: 1.6rem;
   color: $color-grey;
