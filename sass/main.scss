@@ -96,12 +96,12 @@ h1 {
 */
 
 .section {
-  padding: 3rem;
+  padding: calc(#{$padding / 2});
 }
 
 .section-header {
   text-align: center;
-  padding: $padding;
+  margin: $margin auto;
   
   h2 {
     display: inline-block;
@@ -115,30 +115,15 @@ h1 {
   }
 }
 
-.seperator {
-	overflow: hidden;
-	position: relative;
-	transform: skewY(-2deg); 
-  height: 20rem;
-  margin-top: 5rem;
-  
-  img {
-    width: 100%;
-    transform: translateY(-10rem);
-  }
-}
-
 .card-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-gap: $margin;
+  grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
 }
 
 .card {
   display: flex;
-  width: 24rem;
-  margin: $margin 0;
+  margin: 0 auto;
   padding: $padding;
   flex-direction: column;
   justify-content: center;

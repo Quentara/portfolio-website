@@ -67,11 +67,11 @@ h1 {
   SECTION STYLES
 */
 .section {
-  padding: 3rem; }
+  padding: calc(1rem); }
 
 .section-header {
   text-align: center;
-  padding: 2rem; }
+  margin: 2rem auto; }
   .section-header h2 {
     display: inline-block;
     font-size: 3rem;
@@ -82,26 +82,14 @@ h1 {
     padding: 2rem;
     line-height: 3rem; }
 
-.seperator {
-  overflow: hidden;
-  position: relative;
-  transform: skewY(-2deg);
-  height: 20rem;
-  margin-top: 5rem; }
-  .seperator img {
-    width: 100%;
-    transform: translateY(-10rem); }
-
 .card-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap; }
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr)); }
 
 .card {
   display: flex;
-  width: 24rem;
-  margin: 2rem 0;
+  margin: 0 auto;
   padding: 2rem;
   flex-direction: column;
   justify-content: center;
