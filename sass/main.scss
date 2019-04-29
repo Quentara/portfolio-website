@@ -68,7 +68,7 @@ a {
   justify-content: space-evenly;
   align-items: center;
   height: 100vh;
-  padding: $padding;
+  padding: calc(#{$padding} *2);
   background: linear-gradient(to bottom right, rgba($dark-blue, .9), rgba($brand-magenta, .9)), url("/src/img/hero-background.jpg");
   background-size: cover;
   text-align: center;
@@ -82,7 +82,6 @@ a {
 
 h1 {
   font-size: 6rem;
-  text-transform: uppercase;
   line-height: 5rem;
 }
 
@@ -165,26 +164,33 @@ h1 {
 */
 
 .footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 	padding: 25px;
 	text-align: center;
-	font-size: .75em;
 	color: $color-white;
   background: $dark-blue;
 }
 
 .social-icons {
-	display: flex;
-  justify-content: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 .social {
-	margin: 0 25px;
-	font-size: 2.5em;
+  font-size: 2.5rem;
 	transition: color 1s;
   text-decoration: none;
 
   &:hover {
-    color: $brand-magenta;}
+    color: $brand-magenta;
+  }
+
+  &:not(:last-child) {
+    margin-right: 0.5rem;
+  }
 }
 
 .linkedin {
@@ -219,8 +225,10 @@ h1 {
   }
 
   #welcome-section {
+    padding: calc(#{$padding} / 2);
+
     .subline {
-      font-size: 1rem;
+      font-size: 1.25rem;
     }
   }
 }

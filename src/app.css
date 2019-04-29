@@ -45,7 +45,7 @@ a {
   justify-content: space-evenly;
   align-items: center;
   height: 100vh;
-  padding: 2rem;
+  padding: calc(2rem *2);
   background: linear-gradient(to bottom right, rgba(31, 60, 77, 0.9), rgba(252, 81, 133, 0.9)), url("/src/img/hero-background.jpg");
   background-size: cover;
   text-align: center;
@@ -56,7 +56,6 @@ a {
 
 h1 {
   font-size: 6rem;
-  text-transform: uppercase;
   line-height: 5rem; }
 
 .avatar {
@@ -122,23 +121,27 @@ h1 {
   FOOTER
 */
 .footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 25px;
   text-align: center;
-  font-size: .75em;
   color: #f2f2f2;
   background: #1f3c4d; }
 
 .social-icons {
   display: flex;
-  justify-content: center; }
+  justify-content: space-around; }
 
 .social {
-  margin: 0 25px;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   transition: color 1s;
   text-decoration: none; }
   .social:hover {
     color: #FC5185; }
+  .social:not(:last-child) {
+    margin-right: 0.5rem; }
 
 .linkedin {
   color: #0077b5; }
@@ -160,5 +163,7 @@ h1 {
     display: none; }
   #navbar svg {
     display: inline; }
-  #welcome-section .subline {
-    font-size: 1rem; } }
+  #welcome-section {
+    padding: calc(2rem / 2); }
+    #welcome-section .subline {
+      font-size: 1.25rem; } }
