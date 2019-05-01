@@ -72,7 +72,7 @@ h1 {
 
 .section-header {
   text-align: center;
-  margin: 2rem auto; }
+  margin: 0 auto 2rem; }
   .section-header h2 {
     display: inline-block;
     font-size: 3rem;
@@ -84,14 +84,14 @@ h1 {
     line-height: 3rem; }
 
 .card-section {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-  justify-content: center; }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 .card {
   display: flex;
-  margin: 0 auto;
+  width: 20rem;
+  margin: 2rem auto;
   padding: 2rem;
   flex-direction: column;
   justify-content: center;
@@ -162,6 +162,8 @@ h1 {
   MEDIA QUERYS
 */
 @media (max-width: 380px) {
+  body {
+    font-size: 1rem; }
   #navbar span {
     display: none; }
   #navbar svg {
