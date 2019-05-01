@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 0.875rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
@@ -68,7 +68,7 @@ h1 {
   SECTION STYLES
 */
 .section {
-  padding: calc(1rem); }
+  padding: 2rem; }
 
 .section-header {
   text-align: center;
@@ -86,7 +86,8 @@ h1 {
 .card-section {
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr)); }
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  justify-content: center; }
 
 .card {
   display: flex;
@@ -166,6 +167,11 @@ h1 {
   #navbar svg {
     display: inline; }
   #welcome-section {
-    padding: calc(2rem / 2); }
+    height: 90vh;
+    padding: 3.5rem 2rem 2rem; }
+    #welcome-section h1 {
+      font-size: 3rem; }
     #welcome-section .subline {
-      font-size: 1.25rem; } }
+      font-size: 1rem; }
+    #welcome-section .avatar {
+      max-width: 10rem; } }
